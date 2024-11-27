@@ -34,6 +34,9 @@ pipeline {
         }
 
 	stage('print'){
+		agent {
+	    		label 'linux'
+   		 }
 		steps{
 			sh "echo testing"
 		}
